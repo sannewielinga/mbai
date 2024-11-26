@@ -64,17 +64,23 @@ def main():
         # Get ML predictions on the test set
         y_pred_ml = ml_model.predict(X_test_ml)
         
+        if hasattr(ml_model, 'predict_proba'):
+            ml_confidence = ml_model.predict_proba(X_test_ml)
+        else:
+            ml_confidences = [[0.5, 0.5]] * len(X_test_ml) #placeholder
         # Create hybrid predictions
         y_pred_hybrid = []
         for idx in range(len(y_true)):
             fold_pred = y_pred_foldrpp[idx]
             ml_pred = y_pred_ml[idx]
+            ml_confidence = ml_confidences[idx][ml_pred]
+
+            confidence_threshold = 0.6
             
             # Hybrid logic: Use FOLD-R++ prediction when it agrees with ML prediction, else trust ML model
-            if fold_pred == ml_pred:
+            if ml_confidences < confidence_threshold:
                 hybrid_pred = fold_pred
             else:
-                # You can adjust this logic as per your requirements
                 hybrid_pred = ml_pred
             
             y_pred_hybrid.append(hybrid_pred)
