@@ -1,3 +1,5 @@
+# explainability.py
+
 def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid):
     """
     Get explanations for the instances where the hybrid model corrected the ML model.
@@ -75,7 +77,7 @@ def rank_rules_by_contribution(model_foldrpp, data_test, y_pred_ml, y_pred_hybri
     ranked_rules = sorted(rule_contributions.items(), key=lambda item: item[1], reverse=True)
     return ranked_rules
 
-def save_important_rules(ranked_rules, dataset_name, model_name, exp_num):
+def save_important_rules(ranked_rules, dataset_name, model_name):
     """
     Save the ranked rules to a file.
 
@@ -88,15 +90,12 @@ def save_important_rules(ranked_rules, dataset_name, model_name, exp_num):
         The name of the dataset
     model_name: str
         The name of the ML model
-    exp_num: int
-        The experiment number
 
     Returns
     -------
     None
     """
-    
-    filename = f'important_rules_{dataset_name}_{model_name}_exp{exp_num}.txt'
+    filename = f'important_rules_{dataset_name}_{model_name}.txt'
     with open(filename, 'w') as f:
         for rule, count in ranked_rules:
             f.write(f'Rule used {count} times:\n{rule}\n\n')

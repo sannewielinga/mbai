@@ -1,3 +1,5 @@
+# foldrpp_wrapper.py
+
 from foldrpp import Foldrpp
 import clingo
 
@@ -47,9 +49,6 @@ def model_to_asp(model, scale_factor=10):
         asp_rules.append(rule_str)
     return '\n'.join(asp_rules)
 
-
-
-
 def data_to_asp_facts(data, model, scale_factor=10):
     facts = []
     for idx, x in enumerate(data):
@@ -67,9 +66,6 @@ def data_to_asp_facts(data, model, scale_factor=10):
                     scaled_val = int(float(val) * scale_factor)
                     facts.append(f'{attr}("{patient_id}", {scaled_val}).')
     return '\n'.join(facts)
-
-
-
 
 def run_clingo(rules_str, facts_str, model):
     ctl = clingo.Control()
@@ -90,20 +86,16 @@ def run_clingo(rules_str, facts_str, model):
     ctl.solve(on_model=on_model)
     return labels
 
-def predict_foldrpp_clingo(model, data_test, scale_factor=10, dataset_name='', exp_num=0):
+def predict_foldrpp_clingo(model, data_test, scale_factor=10):
     rules_str = model_to_asp(model, scale_factor)
     facts_str = data_to_asp_facts(data_test, model, scale_factor)
     asp_program = rules_str + "\n" + facts_str
-    # print("ASP Program:")
-    # print(asp_program)
-    asp_program_filename = f'asp_program_{dataset_name}_exp{exp_num}.lp'
-    with open(asp_program_filename, 'w') as f:
-        f.write(asp_program)
+
     labels = run_clingo(rules_str, facts_str, model)
     label_map = {x['id']: x['label'] for x in data_test}
     y_pred = [0] * len(data_test)
     patient_id_to_index = {x['id']: idx for idx, x in enumerate(data_test)}
     for patient_id, label_value in labels:
         idx = patient_id_to_index[patient_id]
-        y_pred[idx] = 1 if label_value == model.pos_val else 0 
-    return y_pred, asp_program_filename
+        y_pred[idx] = 1 if label_value == model.pos_val else 0
+    return y_pred, asp_program  # Return the ASP program as a string

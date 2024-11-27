@@ -1,0 +1,95 @@
+Dataset,Model,t-statistic,p-value
+heart,Random Forest,0.0,1.0
+heart,SVM,3.549263978886944,0.006223066072554423
+heart,KNN,,
+heart,Neural Network,-0.5345224838248486,0.6059307686316777
+Dataset,Model,t-statistic,p-value
+autism,Random Forest,-3.0377373325002672,0.014069338269317616
+autism,SVM,32.117935764192715,1.3511631466394236e-10
+autism,KNN,,
+autism,Neural Network,1.0,0.34343639613791355
+Dataset,Model,t-statistic,p-value
+breastw,Random Forest,-2.5384615384615423,0.03179092810435826
+breastw,SVM,0.4285714285714122,0.6783097418055912
+breastw,KNN,,
+breastw,Neural Network,3.0869745325651543,0.012992786487757474
+Dataset,Model,t-statistic,p-value
+ecoli,Random Forest,0.3611575592573123,0.7263142108887226
+ecoli,SVM,7.297498220515183,4.576867396869618e-05
+ecoli,KNN,,
+ecoli,Neural Network,2.752988806446737,0.022367189680572223
+Dataset,Model,t-statistic,p-value
+kidney,Random Forest,-0.9999999999999998,0.34343639613791366
+kidney,SVM,3.737046593418298,0.004646628087613756
+kidney,KNN,,
+kidney,Neural Network,0.6882472016116836,0.5086464915963456
+Dataset,Model,t-statistic,p-value
+parkison,Random Forest,-1.8456820029665937,0.09802200484835652
+parkison,SVM,0.19011727515735174,0.8534362081257226
+parkison,KNN,,
+parkison,Neural Network,,
+Dataset,Model,t-statistic,p-value
+heart,Random Forest,0.0,1.0
+heart,SVM,4.045199174779453,0.002905806938735546
+heart,KNN,,
+heart,Neural Network,-0.5345224838248486,0.6059307686316777
+Dataset,Model,t-statistic,p-value
+heart,Random Forest,0.0,1.0
+heart,SVM,3.6554019191032943,0.005273061254513352
+heart,KNN,,
+heart,Neural Network,-0.5345224838248486,0.6059307686316777
+Dataset,Model,t-statistic,p-value
+autism,Random Forest,-3.0377373325002672,0.014069338269317616
+autism,SVM,31.747789310148562,1.4984925821541764e-10
+autism,KNN,,
+autism,Neural Network,1.0,0.34343639613791355
+Dataset,Model,t-statistic,p-value
+breastw,Random Forest,-2.5384615384615423,0.03179092810435826
+breastw,SVM,0.8017837257372598,0.4433318501696675
+breastw,KNN,,
+breastw,Neural Network,3.0869745325651543,0.012992786487757474
+Dataset,Model,t-statistic,p-value
+ecoli,Random Forest,0.3611575592573123,0.7263142108887226
+ecoli,SVM,6.862068965517241,7.372968246759647e-05
+ecoli,KNN,,
+ecoli,Neural Network,2.752988806446737,0.022367189680572223
+Dataset,Model,t-statistic,p-value
+kidney,Random Forest,-0.9999999999999998,0.34343639613791366
+kidney,SVM,3.073630584332492,0.013275877464573031
+kidney,KNN,,
+kidney,Neural Network,0.6882472016116836,0.5086464915963456
+Dataset,Model,t-statistic,p-value
+parkison,Random Forest,-1.8456820029665937,0.09802200484835652
+parkison,SVM,0.20751433915982812,0.8402276669135248
+parkison,KNN,,
+parkison,Neural Network,,
+Dataset,Model,t-statistic,p-value
+heart,Random Forest,0.0,1.0
+heart,SVM,3.613297808461349,0.005630276884416697
+heart,KNN,,
+heart,Neural Network,-0.5345224838248486,0.6059307686316777
+Dataset,Model,t-statistic,p-value
+autism,Random Forest,-3.0377373325002672,0.014069338269317616
+autism,SVM,32.112318586877635,1.3532750237888647e-10
+autism,KNN,,
+autism,Neural Network,1.0,0.34343639613791355
+Dataset,Model,t-statistic,p-value
+breastw,Random Forest,-2.5384615384615423,0.03179092810435826
+breastw,SVM,0.8017837257372598,0.4433318501696675
+breastw,KNN,,
+breastw,Neural Network,3.0869745325651543,0.012992786487757474
+Dataset,Model,t-statistic,p-value
+ecoli,Random Forest,0.3611575592573123,0.7263142108887226
+ecoli,SVM,7.848194332994841,2.578734232734792e-05
+ecoli,KNN,,
+ecoli,Neural Network,2.7643280257527763,0.021956201836446008
+Dataset,Model,t-statistic,p-value
+kidney,Random Forest,-0.9999999999999998,0.34343639613791366
+kidney,SVM,3.4999999999999987,0.006723515763058966
+kidney,KNN,,
+kidney,Neural Network,0.6882472016116836,0.5086464915963456
+Dataset,Model,t-statistic,p-value
+parkison,Random Forest,-1.8456820029665937,0.09802200484835652
+parkison,SVM,-0.30942637387762856,0.764041160108307
+parkison,KNN,,
+parkison,Neural Network,,
