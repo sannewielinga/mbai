@@ -1,0 +1,21 @@
+[
+    {
+        "instance": {
+            "clump_thickness": "3",
+            "cell_size_uniformity": "1",
+            "cell_shape_uniformity": "1",
+            "marginal_adhesion": "3",
+            "single_epi_cell_size": "8",
+            "bare_nuclei": "1",
+            "bland_chromatin": "5",
+            "normal_nucleoli": "8",
+            "mitoses": "1",
+            "label": 0,
+            "id": "patient49"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 1,
+        "hybrid_prediction": 1,
+        "explanation": "[\"{'cell_size_uniformity': '1', 'bland_chromatin': '5', 'normal_nucleoli': '8', 'bare_nuclei': '1', 'single_epi_cell_size': '8', 'marginal_adhesion': '3', 'clump_thickness': '3', 'cell_shape_uniformity': '1'}\", \"label(X,'malignant') does hold because\\n\\tthe value of bland_chromatin is '5' which should equal '5' does hold and\\n\\tthe value of normal_nucleoli is '8' which should not equal '1' does hold \\n\"]"
+    }
+]

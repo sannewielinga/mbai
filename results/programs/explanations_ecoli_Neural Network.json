@@ -1,0 +1,38 @@
+[
+    {
+        "instance": {
+            "sn": "FEPA",
+            "mcg": 0.64,
+            "gvh": 0.57,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.7,
+            "alm1": 0.33,
+            "alm2": 0.26,
+            "label": 0,
+            "id": "patient48"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 1,
+        "explanation": "[\"{'sn': 'FEPA', 'alm1': 0.33, 'mcg': 0.64, 'gvh': 0.57, 'alm2': 0.26, 'aac': 0.7}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FEPA' which should not equal 'TBPA' does hold and\\n\\tthe value of sn is 'FEPA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does hold because\\n\\t\\tthe value of sn is 'FEPA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.57 which should be greater than 0.55 does hold and\\n\\t\\tthe value of mcg is 0.64 which should be greater than 0.41 does hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FEPA' which should not equal 'AAS' does hold and\\n\\tthe value of sn is 'FEPA' which should not equal 'SPEA' does hold and\\n\\tthe value of mcg is 0.64 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.33 which should be greater than 0.37 does not hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.55 does hold and\\n\\tthe value of gvh is 0.57 which should be less equal to 0.58 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "DLDH",
+            "mcg": 0.56,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.34,
+            "alm1": 0.37,
+            "alm2": 0.46,
+            "label": 1,
+            "id": "patient65"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 1,
+        "hybrid_prediction": 1,
+        "explanation": "[\"{'sn': 'DLDH', 'alm1': 0.37, 'mcg': 0.56, 'gvh': 0.51, 'alm2': 0.46, 'aac': 0.34}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'DLDH' which should not equal 'TBPA' does hold and\\n\\tthe value of sn is 'DLDH' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.37 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'DLDH' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.51 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.56 which should be greater than 0.41 does hold \\n\"]"
+    }
+]

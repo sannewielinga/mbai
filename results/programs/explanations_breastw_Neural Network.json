@@ -1,0 +1,21 @@
+[
+    {
+        "instance": {
+            "clump_thickness": "6",
+            "cell_size_uniformity": "5",
+            "cell_shape_uniformity": "4",
+            "marginal_adhesion": "4",
+            "single_epi_cell_size": "3",
+            "bare_nuclei": "9",
+            "bland_chromatin": "7",
+            "normal_nucleoli": "8",
+            "mitoses": "3",
+            "label": 1,
+            "id": "patient33"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 1,
+        "hybrid_prediction": 1,
+        "explanation": "[\"{'cell_size_uniformity': '5', 'bland_chromatin': '7', 'normal_nucleoli': '8', 'bare_nuclei': '9', 'single_epi_cell_size': '3', 'marginal_adhesion': '4', 'clump_thickness': '6', 'cell_shape_uniformity': '4'}\", \"label(X,'malignant') does hold because\\n\\tthe value of cell_size_uniformity is '5' which should not equal '1' does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of bare_nuclei is '9' which should equal '1' does not hold and\\n\\t\\tthe value of cell_size_uniformity is '5' which should not equal '10' does hold and\\n\\t\\tthe value of marginal_adhesion is '4' which should not equal '10' does hold and\\n\\t\\tthe value of clump_thickness is '6' which should not equal '7' does hold and\\n\\t\\tthe value of cell_size_uniformity is '5' which should not equal '6' does hold and\\n\\t\\tthe value of bland_chromatin is '7' which should not equal '5' does hold \\n\\texception ab2(X,'True') does not hold because\\n\\t\\tthe value of bare_nuclei is '9' which should not equal '10' does hold and\\n\\t\\tthe value of single_epi_cell_size is '3' which should equal '2' does not hold and\\n\\t\\tthe value of clump_thickness is '6' which should equal '4' does not hold \\n\\texception ab3(X,'True') does not hold because\\n\\t\\tthe value of cell_shape_uniformity is '4' which should equal '2' does not hold and\\n\\t\\tthe value of bland_chromatin is '7' which should equal '3' does not hold \\n\"]"
+    }
+]

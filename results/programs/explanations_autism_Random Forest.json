@@ -1,0 +1,56 @@
+[
+    {
+        "instance": {
+            "a1": "1",
+            "a2": "0",
+            "a3": "1",
+            "a4": "1",
+            "a5": "1",
+            "a6": "0",
+            "a7": "1",
+            "a8": "1",
+            "a9": "0",
+            "a10": "1",
+            "age": 19.0,
+            "gender": "f",
+            "ethnicity": "middleeastern",
+            "jaundice": "no",
+            "pdd": "no",
+            "used_app_before": "no",
+            "relation": "Self",
+            "label": 0,
+            "id": "patient100"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 1,
+        "hybrid_prediction": 1,
+        "explanation": "[\"{'a9': '0', 'a5': '1', 'age': 19.0, 'a1': '1', 'a10': '1', 'a3': '1', 'pdd': 'no', 'a6': '0', 'a8': '1', 'a7': '1', 'a4': '1', 'a2': '0', 'ethnicity': 'middleeastern', 'jaundice': 'no', 'relation': 'Self'}\", \"label(X,'NO') does hold because\\n\\tthe value of a9 is '0' which should equal '0' does hold \\n\\texception ab3(X,'True') does not hold because\\n\\t\\tthe value of a5 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a8 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a2 is '0' which should not equal '0' does not hold and\\n\\t\\tthe value of a10 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of relation is 'Self' which should equal 'Self' does hold \\n\\texception ab5(X,'True') does not hold because\\n\\t\\tthe value of a4 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a6 is '0' which should not equal '0' does not hold and\\n\\t\\tthe value of a8 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a1 is '1' which should not equal '0' does hold \\n\\texception ab6(X,'True') does not hold because\\n\\t\\tthe value of ethnicity is 'middleeastern' which should equal 'Latino' does not hold and\\n\\t\\tthe value of a3 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of age is 19.0 which should be less equal to 25.0 does hold \\n\\texception ab7(X,'True') does not hold because\\n\\t\\tthe value of ethnicity is 'middleeastern' which should equal '?' does not hold and\\n\\t\\tthe value of a3 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a5 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a7 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a4 is '1' which should not equal '0' does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "a1": "1",
+            "a2": "1",
+            "a3": "1",
+            "a4": "1",
+            "a5": "0",
+            "a6": "1",
+            "a7": "0",
+            "a8": "1",
+            "a9": "1",
+            "a10": "1",
+            "age": 37.0,
+            "gender": "m",
+            "ethnicity": "white",
+            "jaundice": "no",
+            "pdd": "no",
+            "used_app_before": "no",
+            "relation": "Self",
+            "label": 0,
+            "id": "patient119"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 1,
+        "hybrid_prediction": 1,
+        "explanation": "[\"{'a9': '1', 'a5': '0', 'age': 37.0, 'a1': '1', 'a10': '1', 'a3': '1', 'pdd': 'no', 'a6': '1', 'a8': '1', 'a7': '0', 'a4': '1', 'a2': '1', 'ethnicity': 'white', 'jaundice': 'no', 'relation': 'Self'}\", \"label(X,'NO') does hold because\\n\\tthe value of a5 is '0' which should equal '0' does hold and\\n\\tthe value of age is 37.0 which should be less equal to 43.0 does hold \\n\\texception ab9(X,'True') does not hold because\\n\\t\\tthe value of a3 is '1' which should not equal '0' does hold and\\n\\t\\tthe value of a7 is '0' which should not equal '0' does not hold \\n\"]"
+    }
+]

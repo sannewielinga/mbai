@@ -1,6 +1,7 @@
 import numpy as np
 
 def create_hybrid_predictions(y_true, y_pred_ml, y_pred_foldrpp, ml_confidences, confidence_threshold=0.6):
+    
     y_pred_hybrid = []
     for idx in range(len(y_true)):
         fold_pred = y_pred_foldrpp[idx]

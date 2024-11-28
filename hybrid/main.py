@@ -9,8 +9,7 @@ from data_loader import load_dataset, preprocess_data_for_ml
 from foldrpp_wrapper import train_foldrpp, predict_foldrpp_clingo
 from ml_models import get_ml_models
 from hybrid_model import create_hybrid_predictions
-from error_analysis import generate_confusion_matrices
-from explainability import get_explanations, rank_rules_by_contribution, save_important_rules
+from explainability import *
 
 def main():
     datasets = ['heart', 'autism', 'breastw', 'ecoli', 'kidney', 'parkison']
@@ -33,6 +32,7 @@ def main():
         # Initialize dictionaries to store ASP programs and important rules
         asp_programs = {}  # Key: (model_name), Value: list of (exp_num, asp_program)
         important_rules = {}  # Key: (model_name), Value: list of (exp_num, ranked_rules)
+        explanations_list = {}
 
         for exp_num in range(num_experiments):
             print(f" Experiment {exp_num+1}/{num_experiments}")
@@ -119,9 +119,6 @@ def main():
                     'Hybrid Accuracy': acc_hybrid,
                 })
                 
-                # Error Analysis
-                generate_confusion_matrices(y_true, y_pred_ml, y_pred_foldrpp, y_pred_hybrid, model_name, dataset_name)
-                
                 # Explainability
                 explanations = get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid)
                 ranked_rules = rank_rules_by_contribution(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid)
@@ -130,6 +127,7 @@ def main():
                 # We store all ASP programs and important rules with their experiment numbers
                 asp_programs.setdefault((model_name), []).append((exp_num, asp_program))
                 important_rules.setdefault((model_name), []).append((exp_num, ranked_rules))
+                explanations_list.setdefault((model_name), []).append((exp_num, explanations))
                 
         # After all experiments for this dataset
         # Convert to DataFrame
@@ -203,10 +201,12 @@ def main():
             # Get the corresponding ASP program and important rules
             asp_list = asp_programs.get((model_name))
             rules_list = important_rules.get((model_name))
+            explanations_list_model = explanations_list.get((model_name))
 
             # Find the ASP program and important rules for the median experiment
             asp_program = None
             ranked_rules = None
+            explanations = None
             for exp_num, asp_prog in asp_list:
                 if exp_num == median_experiment:
                     asp_program = asp_prog
@@ -217,9 +217,14 @@ def main():
                     ranked_rules = rules
                     break
 
+            for exp_num, expl in explanations_list_model:
+                if exp_num == median_experiment:
+                    explanations = expl
+                    break
+
             # Save the ASP program
             if asp_program:
-                asp_program_filename = f'asp_program_{dataset_name}_{model_name}.lp'
+                asp_program_filename = f'./results/programs/asp_program_{dataset_name}_{model_name}.lp'
                 with open(asp_program_filename, 'w') as f:
                     f.write(asp_program)
 
@@ -227,9 +232,12 @@ def main():
             if ranked_rules:
                 save_important_rules(ranked_rules, dataset_name, model_name)
 
+            if explanations:
+                save_explanations(explanations, dataset_name, model_name)
+
         # Create DataFrame from stats_results and save
         stats_results_df = pd.DataFrame(stats_results)
-        stats_results_df.to_csv('statistical_tests_results.csv', mode='a', index=False)
+        stats_results_df.to_csv('./results/statistical_tests_results.csv', mode='a', index=False)
 
     # After all datasets
     final_results_df = pd.concat(results, ignore_index=True)
@@ -237,7 +245,7 @@ def main():
     print(final_results_df)
 
     # Save to CSV
-    final_results_df.to_csv('hybrid_model_results_with_std.csv', index=False)
+    final_results_df.to_csv('./results/hybrid_model_results_with_std.csv', index=False)
     
 if __name__ == '__main__':
     main()
