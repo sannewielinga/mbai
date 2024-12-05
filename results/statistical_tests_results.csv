@@ -24,11 +24,6 @@ kidney,SVM,,
 kidney,KNN,,
 kidney,Neural Network,,
 Dataset,Model,t-statistic,p-value
-parkison,Random Forest,,
-parkison,SVM,0.26413527189769265,0.7976245209720986
-parkison,KNN,,
-parkison,Neural Network,,
-Dataset,Model,t-statistic,p-value
 heart,Random Forest,0.0,1.0
 heart,SVM,4.033161717886224,0.0029588669368993815
 heart,KNN,,
@@ -54,11 +49,6 @@ kidney,SVM,3.4999999999999987,0.006723515763058966
 kidney,KNN,,
 kidney,Neural Network,0.6882472016116836,0.5086464915963456
 Dataset,Model,t-statistic,p-value
-parkison,Random Forest,-1.8456820029665937,0.09802200484835652
-parkison,SVM,-0.3015113445777572,0.7698749998921414
-parkison,KNN,,
-parkison,Neural Network,,
-Dataset,Model,t-statistic,p-value
 heart,Random Forest,0.0,1.0
 heart,SVM,4.205279814820315,0.0022887346338898427
 heart,KNN,,
@@ -83,8 +73,3 @@ kidney,Random Forest,-0.9999999999999998,0.34343639613791366
 kidney,SVM,3.4999999999999987,0.006723515763058966
 kidney,KNN,,
 kidney,Neural Network,0.6882472016116836,0.5086464915963456
-Dataset,Model,t-statistic,p-value
-parkison,Random Forest,-1.8456820029665937,0.09802200484835652
-parkison,SVM,7.593925488436073e-15,0.9999999999999941
-parkison,KNN,,
-parkison,Neural Network,,
