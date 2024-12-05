@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from foldrpp import Foldrpp
-from datasets import heart, autism, breastw, ecoli, kidney, parkison
+from datasets import heart, autism, breastw, ecoli, kidney
 
 def load_dataset(name):
     if name == 'heart':
@@ -14,8 +14,6 @@ def load_dataset(name):
         model, data = ecoli()
     elif name == 'kidney':
         model, data = kidney()
-    elif name == 'parkison':
-        model, data = parkison()
     else:
         raise ValueError(f"Dataset {name} is not available.")
     return model, data
