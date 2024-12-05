@@ -12,7 +12,7 @@ from hybrid_model import create_hybrid_predictions
 from explainability import *
 
 def main():
-    datasets = ['heart', 'autism', 'breastw', 'ecoli', 'kidney', 'parkison']
+    datasets = ['heart', 'autism', 'breastw', 'ecoli', 'kidney']
     results = []
     
     for dataset_name in datasets:
