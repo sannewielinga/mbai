@@ -1,6 +1,7 @@
 import numpy as np
 import json
 
+
 def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid):
     """
     Get explanations for the instances where the hybrid model corrected the ML model.
@@ -30,18 +31,23 @@ def get_explanations(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid):
         fold_pred = int(model_foldrpp.classify(x))
         if hybrid_pred != ml_pred:
             # Convert instance features to serializable types
-            instance = {k: (v.item() if isinstance(v, np.generic) else v) for k, v in x.items()}
+            instance = {
+                k: (v.item() if isinstance(v, np.generic) else v) for k, v in x.items()
+            }
             # Generate proof tree and convert to string
             proof_tree = str(model_foldrpp.proof_trees(x))
-            explanations.append({
-                'instance': instance,
-                'ml_prediction': ml_pred,
-                'foldrpp_prediction': fold_pred,
-                'hybrid_prediction': hybrid_pred,
-                'explanation': proof_tree
-            })
+            explanations.append(
+                {
+                    "instance": instance,
+                    "ml_prediction": ml_pred,
+                    "foldrpp_prediction": fold_pred,
+                    "hybrid_prediction": hybrid_pred,
+                    "explanation": proof_tree,
+                }
+            )
 
     return explanations
+
 
 def rank_rules_by_contribution(model_foldrpp, data_test, y_pred_ml, y_pred_hybrid):
     """
@@ -74,8 +80,11 @@ def rank_rules_by_contribution(model_foldrpp, data_test, y_pred_ml, y_pred_hybri
                 if rule_str not in rule_contributions:
                     rule_contributions[rule_str] = 0
                 rule_contributions[rule_str] += 1
-    ranked_rules = sorted(rule_contributions.items(), key=lambda item: item[1], reverse=True)
+    ranked_rules = sorted(
+        rule_contributions.items(), key=lambda item: item[1], reverse=True
+    )
     return ranked_rules
+
 
 def save_important_rules(ranked_rules, dataset_name, model_name):
     """
@@ -98,10 +107,10 @@ def save_important_rules(ranked_rules, dataset_name, model_name):
     -----
     The file will be saved in the ./results/programs directory with the name important_rules_<dataset_name>_<model_name>.txt
     """
-    filename = f'./results/programs/important_rules_{dataset_name}_{model_name}.txt'
-    with open(filename, 'w') as f:
+    filename = f"./results/programs/important_rules_{dataset_name}_{model_name}.txt"
+    with open(filename, "w") as f:
         for rule, count in ranked_rules:
-            f.write(f'Rule used {count} times:\n{rule}\n\n')
+            f.write(f"Rule used {count} times:\n{rule}\n\n")
 
 
 def save_explanations(explanations, dataset_name, model_name):
@@ -121,8 +130,8 @@ def save_explanations(explanations, dataset_name, model_name):
     -------
     None
     """
-    filename = f'./results/programs/explanations_{dataset_name}_{model_name}.json'
-    with open(filename, 'w') as f:
+    filename = f"./results/programs/explanations_{dataset_name}_{model_name}.json"
+    with open(filename, "w") as f:
         # Custom function to convert NumPy types to native Python types
         def convert_numpy_types(o):
             if isinstance(o, np.integer):
