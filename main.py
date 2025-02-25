@@ -18,20 +18,21 @@ from explainability import (
 def main():
     """
     Runs multiple experiments on different datasets to evaluate the performance
-    of ML models, FOLD-R++ models, and hybrid models that combine predictions
+    of ML models, pure FOLD-R++ models, and hybrid models that combine predictions
     from both. For each dataset, it performs the following steps:
 
     1. Loads and preprocesses data for ML model training.
     2. Splits the data into train and test sets for multiple experiments.
-    3. Trains FOLD-R++ models and makes predictions using ASP.
-    4. Trains baseline ML models and makes predictions.
-    5. Combines predictions to create hybrid model predictions.
-    6. Evaluates and records accuracy, precision, recall, and F1 scores for
-    each model type.
-    7. Performs statistical significance testing between ML and hybrid models.
-    8. Saves ASP programs and important rules for statistically significant models.
-    9. Aggregates results across all experiments and datasets, calculates mean
-    and standard deviation, and saves the results to CSV files.
+    3. Trains FOLD-R++ model and makes predictions using ASP.
+    4. Evaluates the pure FOLD-R++ predictions.
+    5. Trains baseline ML models and makes predictions.
+    6. Combines predictions to create hybrid model predictions.
+    7. Evaluates and records accuracy, precision, recall, and F1 scores for
+       each model type.
+    8. Performs statistical significance testing between ML and hybrid models.
+    9. Saves ASP programs and important rules for statistically significant models.
+    10. Aggregates results across all experiments and datasets, calculates mean
+        and standard deviation, and saves the results to CSV files.
     """
 
     datasets = ["heart", "autism", "breastw", "ecoli", "kidney"]
@@ -80,6 +81,31 @@ def main():
             )
             y_true = [x["label"] for x in data_test]
 
+            acc_foldrpp = accuracy_score(y_true, y_pred_foldrpp)
+            p_foldrpp = precision_score(y_true, y_pred_foldrpp, zero_division=0)
+            r_foldrpp = recall_score(y_true, y_pred_foldrpp, zero_division=0)
+            f1_foldrpp = f1_score(y_true, y_pred_foldrpp, zero_division=0)
+
+            # Record the pure FOLD-R++ results separately.
+            pure_foldrpp_result = {
+                "Dataset": dataset_name,
+                "Experiment": exp_num,
+                "Model": "FOLD-R++ Pure",
+                "ML Accuracy": np.nan,
+                "FOLD-R++ Accuracy": acc_foldrpp,
+                "Hybrid Accuracy": np.nan,
+                "ML Precision": np.nan,
+                "FOLD-R++ Precision": p_foldrpp,
+                "Hybrid Precision": np.nan,
+                "ML Recall": np.nan,
+                "FOLD-R++ Recall": r_foldrpp,
+                "Hybrid Recall": np.nan,
+                "ML F1 Score": np.nan,
+                "FOLD-R++ F1 Score": f1_foldrpp,
+                "Hybrid F1 Score": np.nan,
+            }
+            all_experiments_results.append(pure_foldrpp_result)
+
             models = get_ml_models(random_state=random_state)
             for model_name, ml_model in models.items():
                 ml_model.fit(X_train_ml, y_train_ml)
@@ -100,11 +126,6 @@ def main():
                 p_ml = precision_score(y_true, y_pred_ml, zero_division=0)
                 r_ml = recall_score(y_true, y_pred_ml, zero_division=0)
                 f1_ml = f1_score(y_true, y_pred_ml, zero_division=0)
-
-                acc_foldrpp = accuracy_score(y_true, y_pred_foldrpp)
-                p_foldrpp = precision_score(y_true, y_pred_foldrpp, zero_division=0)
-                r_foldrpp = recall_score(y_true, y_pred_foldrpp, zero_division=0)
-                f1_foldrpp = f1_score(y_true, y_pred_foldrpp, zero_division=0)
 
                 acc_hybrid = accuracy_score(y_true, y_pred_hybrid)
                 p_hybrid = precision_score(y_true, y_pred_hybrid, zero_division=0)
@@ -141,7 +162,7 @@ def main():
                 )
 
                 explanations = get_explanations(
-                    model_foldrpp, data_test, y_pred_ml, y_pred_hybrid
+                    model_foldrpp, data_test, y_pred_ml, y_pred_hybrid, y_true
                 )
                 ranked_rules = rank_rules_by_contribution(
                     model_foldrpp, data_test, y_pred_ml, y_pred_hybrid

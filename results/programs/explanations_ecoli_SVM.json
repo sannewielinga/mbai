@@ -15,6 +15,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'SYK2', 'alm1': 0.3, 'mcg': 0.17, 'gvh': 0.39, 'aac': 0.53}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'SYK2' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.3 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'SYK2' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.39 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.17 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -33,6 +35,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'GLNA', 'alm1': 0.33, 'mcg': 0.28, 'gvh': 0.38, 'aac': 0.5}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'GLNA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'GLNA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.38 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.28 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -51,7 +55,29 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'DCP', 'alm1': 0.35, 'mcg': 0.43, 'gvh': 0.37, 'aac': 0.53}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'DCP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'DCP' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.37 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.43 which should be greater than 0.41 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "XYLF",
+            "mcg": 0.59,
+            "gvh": 0.61,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.42,
+            "alm2": 0.37,
+            "label": 0,
+            "id": "patient3"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'XYLF', 'alm1': 0.42, 'mcg': 0.59, 'gvh': 0.61, 'aac': 0.42}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'XYLF' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'XYLF' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.59 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.61 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.42 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -69,6 +95,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'FES', 'alm1': 0.28, 'mcg': 0.32, 'gvh': 0.42, 'aac': 0.35}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'FES' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'FES' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.42 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.32 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -87,7 +115,109 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 0,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'IF2', 'alm1': 0.39, 'mcg': 0.22, 'gvh': 0.36, 'aac': 0.35}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'IF2' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'IF2' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.22 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.36 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.35 which should be greater than 0.33 does hold \\n\\texception ab2(X,'True') does hold because\\n\\t\\tthe value of alm1 is 0.39 which should be less equal to 0.4 does hold and\\n\\t\\tthe value of mcg is 0.22 which should be less equal to 0.32 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "LGT",
+            "mcg": 0.5,
+            "gvh": 0.37,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.66,
+            "alm1": 0.64,
+            "alm2": 0.69,
+            "label": 0,
+            "id": "patient6"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'LGT', 'alm1': 0.64, 'mcg': 0.5, 'gvh': 0.37, 'aac': 0.66}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'LGT' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.64 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'LGT' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.5 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.64 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.37 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.66 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "RNE",
+            "mcg": 0.43,
+            "gvh": 0.32,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.33,
+            "alm1": 0.45,
+            "alm2": 0.52,
+            "label": 1,
+            "id": "patient7"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'RNE', 'alm1': 0.45, 'mcg': 0.43, 'gvh': 0.32, 'aac': 0.33}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'RNE' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.45 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'RNE' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.43 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.45 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.32 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.33 which should be greater than 0.33 does not hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "CADB",
+            "mcg": 0.83,
+            "gvh": 0.48,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.65,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0,
+            "id": "patient8"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'CADB', 'alm1': 0.76, 'mcg': 0.83, 'gvh': 0.48, 'aac': 0.65}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'CADB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'CADB' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.83 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.48 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.65 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "GLNP",
+            "mcg": 0.49,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.53,
+            "alm1": 0.79,
+            "alm2": 0.81,
+            "label": 0,
+            "id": "patient9"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'GLNP', 'alm1': 0.79, 'mcg': 0.49, 'gvh': 0.42, 'aac': 0.53}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'GLNP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.79 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'GLNP' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.49 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.79 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.42 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.53 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "CYOA",
+            "mcg": 0.7,
+            "gvh": 0.39,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.82,
+            "alm2": 0.84,
+            "label": 0,
+            "id": "patient10"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'CYOA', 'alm1': 0.82, 'mcg': 0.7, 'gvh': 0.39, 'aac': 0.51}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'CYOA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.82 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'CYOA' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.7 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.82 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.39 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.51 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -105,7 +235,49 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'GLPD', 'alm1': 0.35, 'mcg': 0.61, 'gvh': 0.45, 'aac': 0.48}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'GLPD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'GLPD' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.45 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.61 which should be greater than 0.41 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "PTR",
+            "mcg": 0.76,
+            "gvh": 0.73,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.44,
+            "alm1": 0.39,
+            "alm2": 0.39,
+            "label": 0,
+            "id": "patient12"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PTR', 'alm1': 0.39, 'mcg': 0.76, 'gvh': 0.73, 'aac': 0.44}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PTR' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PTR' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.76 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.73 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.44 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "EMRA",
+            "mcg": 0.06,
+            "gvh": 0.61,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.92,
+            "alm2": 0.37,
+            "label": 0,
+            "id": "patient13"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'EMRA', 'alm1': 0.92, 'mcg': 0.06, 'gvh': 0.61, 'aac': 0.49}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'EMRA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.92 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'EMRA' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.06 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.92 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.61 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.49 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -123,7 +295,29 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'CHEB', 'alm1': 0.24, 'mcg': 0.34, 'gvh': 0.45, 'aac': 0.38}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'CHEB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.24 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'CHEB' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.45 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.34 which should be greater than 0.41 does not hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "EXBD",
+            "mcg": 0.46,
+            "gvh": 0.59,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.36,
+            "alm1": 0.76,
+            "alm2": 0.23,
+            "label": 0,
+            "id": "patient15"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'EXBD', 'alm1': 0.76, 'mcg': 0.46, 'gvh': 0.59, 'aac': 0.36}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'EXBD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'EXBD' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.46 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.59 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.36 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -141,6 +335,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'PROB', 'alm1': 0.49, 'mcg': 0.4, 'gvh': 0.46, 'aac': 0.52}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'PROB' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.4 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.49 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.46 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.52 which should be greater than 0.33 does hold \\n\\texception ab2(X,'True') does not hold because\\n\\t\\tthe value of alm1 is 0.49 which should be less equal to 0.4 does not hold and\\n\\t\\tthe value of mcg is 0.4 which should be less equal to 0.32 does not hold \\n\"]"
     },
     {
@@ -159,6 +355,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'AMY2', 'alm1': 0.28, 'mcg': 0.21, 'gvh': 0.34, 'aac': 0.51}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'AMY2' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'AMY2' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.34 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.21 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -177,7 +375,69 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 0,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'GSHR', 'alm1': 0.55, 'mcg': 0.44, 'gvh': 0.35, 'aac': 0.55}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'GSHR' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'GSHR' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.44 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.35 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.55 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "PTGB",
+            "mcg": 0.58,
+            "gvh": 0.55,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.7,
+            "alm2": 0.74,
+            "label": 0,
+            "id": "patient19"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PTGB', 'alm1': 0.7, 'mcg': 0.58, 'gvh': 0.55, 'aac': 0.57}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PTGB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.7 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PTGB' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.58 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.7 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.55 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.57 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "ECPD",
+            "mcg": 0.64,
+            "gvh": 0.72,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.49,
+            "alm1": 0.42,
+            "alm2": 0.19,
+            "label": 0,
+            "id": "patient20"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ECPD', 'alm1': 0.42, 'mcg': 0.64, 'gvh': 0.72, 'aac': 0.49}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'ECPD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'ECPD' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.64 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.42 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.72 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.49 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "SECE",
+            "mcg": 0.48,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.52,
+            "alm1": 0.77,
+            "alm2": 0.71,
+            "label": 0,
+            "id": "patient21"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SECE', 'alm1': 0.77, 'mcg': 0.48, 'gvh': 0.49, 'aac': 0.52}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'SECE' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'SECE' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.48 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.49 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.52 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -195,7 +455,29 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'SYD', 'alm1': 0.29, 'mcg': 0.38, 'gvh': 0.3, 'aac': 0.43}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'SYD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.29 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'SYD' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.3 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.38 which should be greater than 0.41 does not hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "PROP",
+            "mcg": 0.41,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.53,
+            "alm1": 0.75,
+            "alm2": 0.78,
+            "label": 0,
+            "id": "patient23"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PROP', 'alm1': 0.75, 'mcg': 0.41, 'gvh': 0.51, 'aac': 0.53}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PROP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.75 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PROP' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.41 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.75 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.51 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.53 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -213,6 +495,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'EFG', 'alm1': 0.35, 'mcg': 0.4, 'gvh': 0.29, 'aac': 0.42}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'EFG' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.35 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'EFG' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.29 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.4 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -231,6 +515,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'TYRB', 'alm1': 0.32, 'mcg': 0.36, 'gvh': 0.42, 'aac': 0.53}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'TYRB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.32 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'TYRB' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.42 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.36 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -249,7 +535,89 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'PEPE', 'alm1': 0.44, 'mcg': 0.41, 'gvh': 0.48, 'aac': 0.51}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'PEPE' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.41 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.44 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.48 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.51 which should be greater than 0.33 does hold \\n\\texception ab2(X,'True') does not hold because\\n\\t\\tthe value of alm1 is 0.44 which should be less equal to 0.4 does not hold and\\n\\t\\tthe value of mcg is 0.41 which should be less equal to 0.32 does not hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "NHAB",
+            "mcg": 0.7,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.78,
+            "alm2": 0.73,
+            "label": 0,
+            "id": "patient27"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'NHAB', 'alm1': 0.78, 'mcg': 0.7, 'gvh': 0.46, 'aac': 0.56}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'NHAB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'NHAB' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.7 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.78 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.46 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.56 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "DGAL",
+            "mcg": 0.63,
+            "gvh": 1.0,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.35,
+            "alm1": 0.51,
+            "alm2": 0.49,
+            "label": 0,
+            "id": "patient28"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'DGAL', 'alm1': 0.51, 'mcg': 0.63, 'gvh': 1.0, 'aac': 0.35}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'DGAL' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.51 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'DGAL' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.63 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.51 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 1.0 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.35 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "HTRA",
+            "mcg": 0.63,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.6,
+            "alm1": 0.4,
+            "alm2": 0.39,
+            "label": 0,
+            "id": "patient29"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'HTRA', 'alm1': 0.4, 'mcg': 0.63, 'gvh': 0.71, 'aac': 0.6}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'HTRA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'HTRA' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.63 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.71 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.6 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "MURF",
+            "mcg": 0.35,
+            "gvh": 0.48,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.56,
+            "alm1": 0.4,
+            "alm2": 0.48,
+            "label": 1,
+            "id": "patient30"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 1,
+        "hybrid_prediction": 0,
+        "true_label": 1,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MURF', 'alm1': 0.4, 'mcg': 0.35, 'gvh': 0.48, 'aac': 0.56}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'MURF' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.35 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.48 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.56 which should be greater than 0.33 does hold \\n\\texception ab2(X,'True') does not hold because\\n\\t\\tthe value of alm1 is 0.4 which should be less equal to 0.4 does hold and\\n\\t\\tthe value of mcg is 0.35 which should be less equal to 0.32 does not hold \\n\"]"
     },
     {
         "instance": {
@@ -267,7 +635,29 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'PT1', 'alm1': 0.36, 'mcg': 0.52, 'gvh': 0.44, 'aac': 0.37}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'PT1' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.36 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'PT1' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.44 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.52 which should be greater than 0.41 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "DPPC",
+            "mcg": 0.48,
+            "gvh": 0.41,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.9,
+            "alm2": 0.88,
+            "label": 0,
+            "id": "patient32"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'DPPC', 'alm1': 0.9, 'mcg': 0.48, 'gvh': 0.41, 'aac': 0.51}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'DPPC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.9 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'DPPC' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.48 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.9 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.41 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.51 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -285,6 +675,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "worsened",
         "explanation": "[\"{'sn': 'TBPA', 'alm1': 0.37, 'mcg': 0.56, 'gvh': 0.54, 'aac': 0.43}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'TBPA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.37 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'TBPA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.54 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.56 which should be greater than 0.41 does hold \\n\"]"
     },
     {
@@ -303,6 +695,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'UVRB', 'alm1': 0.29, 'mcg': 0.22, 'gvh': 0.34, 'aac': 0.42}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'UVRB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.29 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'UVRB' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.34 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.22 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -321,6 +715,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'SYP', 'alm1': 0.37, 'mcg': 0.34, 'gvh': 0.51, 'aac': 0.44}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'SYP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.37 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'SYP' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.51 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.34 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -339,6 +735,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'CRL', 'alm1': 0.22, 'mcg': 0.4, 'gvh': 0.45, 'aac': 0.38}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'CRL' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.22 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'CRL' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.45 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.4 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -357,6 +755,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'SOXS', 'alm1': 0.06, 'mcg': 0.32, 'gvh': 0.33, 'aac': 0.6}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'SOXS' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.06 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'SOXS' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.33 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.32 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -375,6 +775,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'CAFA', 'alm1': 0.24, 'mcg': 0.39, 'gvh': 0.32, 'aac': 0.46}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'CAFA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.24 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'CAFA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.32 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.39 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -393,7 +795,69 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 0,
         "hybrid_prediction": 1,
+        "true_label": 0,
+        "status": "worsened",
         "explanation": "[\"{'sn': 'FEPA', 'alm1': 0.33, 'mcg': 0.64, 'gvh': 0.57, 'aac': 0.7}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FEPA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does hold because\\n\\t\\tthe value of sn is 'FEPA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.57 which should be greater than 0.55 does hold and\\n\\t\\tthe value of mcg is 0.64 which should be greater than 0.41 does hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FEPA' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.64 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.33 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.57 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.7 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "SECY",
+            "mcg": 0.31,
+            "gvh": 0.36,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.58,
+            "alm1": 0.94,
+            "alm2": 0.94,
+            "label": 0,
+            "id": "patient40"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SECY', 'alm1': 0.94, 'mcg': 0.31, 'gvh': 0.36, 'aac': 0.58}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'SECY' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.94 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'SECY' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.31 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.94 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.36 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.58 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "NFRB",
+            "mcg": 0.63,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.54,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0,
+            "id": "patient41"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'NFRB', 'alm1': 0.76, 'mcg': 0.63, 'gvh': 0.49, 'aac': 0.54}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'NFRB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'NFRB' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.63 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.49 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.54 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "LYSP",
+            "mcg": 0.34,
+            "gvh": 0.51,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.67,
+            "alm1": 0.9,
+            "alm2": 0.9,
+            "label": 0,
+            "id": "patient42"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'LYSP', 'alm1': 0.9, 'mcg': 0.34, 'gvh': 0.51, 'aac': 0.67}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'LYSP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.9 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'LYSP' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.34 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.9 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.51 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.67 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -411,7 +875,69 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'MALQ', 'alm1': 0.28, 'mcg': 0.52, 'gvh': 0.36, 'aac': 0.41}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'MALQ' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'MALQ' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.36 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.52 which should be greater than 0.41 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "PNTA",
+            "mcg": 0.33,
+            "gvh": 0.37,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.46,
+            "alm1": 0.65,
+            "alm2": 0.69,
+            "label": 0,
+            "id": "patient44"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PNTA', 'alm1': 0.65, 'mcg': 0.33, 'gvh': 0.37, 'aac': 0.46}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PNTA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.65 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PNTA' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.33 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.65 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.37 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.46 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "PA1",
+            "mcg": 0.68,
+            "gvh": 0.63,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.73,
+            "alm1": 0.4,
+            "alm2": 0.3,
+            "label": 0,
+            "id": "patient45"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PA1', 'alm1': 0.4, 'mcg': 0.68, 'gvh': 0.63, 'aac': 0.73}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PA1' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PA1' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.68 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.4 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.63 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.73 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "MODA",
+            "mcg": 0.63,
+            "gvh": 0.65,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.39,
+            "alm1": 0.44,
+            "alm2": 0.35,
+            "label": 0,
+            "id": "patient46"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MODA', 'alm1': 0.44, 'mcg': 0.63, 'gvh': 0.65, 'aac': 0.39}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MODA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.44 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MODA' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.63 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.44 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.65 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.39 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -429,6 +955,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'PTKA', 'alm1': 0.28, 'mcg': 0.31, 'gvh': 0.47, 'aac': 0.29}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'PTKA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.28 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'PTKA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.47 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.31 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -447,7 +975,149 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'UBIC', 'alm1': 0.18, 'mcg': 0.3, 'gvh': 0.37, 'aac': 0.43}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'UBIC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.18 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'UBIC' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.37 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.3 which should be greater than 0.41 does not hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "POTD",
+            "mcg": 0.63,
+            "gvh": 0.8,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.46,
+            "alm1": 0.31,
+            "alm2": 0.29,
+            "label": 0,
+            "id": "patient49"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'POTD', 'alm1': 0.31, 'mcg': 0.63, 'gvh': 0.8, 'aac': 0.46}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'POTD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.31 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does hold because\\n\\t\\tthe value of sn is 'POTD' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.8 which should be greater than 0.55 does hold and\\n\\t\\tthe value of mcg is 0.63 which should be greater than 0.41 does hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'POTD' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.63 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.31 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.8 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.46 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "ENVZ",
+            "mcg": 0.72,
+            "gvh": 0.46,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.66,
+            "alm2": 0.7,
+            "label": 0,
+            "id": "patient50"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'ENVZ', 'alm1': 0.66, 'mcg': 0.72, 'gvh': 0.46, 'aac': 0.51}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'ENVZ' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.66 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'ENVZ' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.72 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.66 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.46 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.51 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "OSMY",
+            "mcg": 0.64,
+            "gvh": 0.66,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.41,
+            "alm1": 0.39,
+            "alm2": 0.2,
+            "label": 0,
+            "id": "patient51"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'OSMY', 'alm1': 0.39, 'mcg': 0.64, 'gvh': 0.66, 'aac': 0.41}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'OSMY' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'OSMY' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.64 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.39 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.66 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.41 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "MULI",
+            "mcg": 0.77,
+            "gvh": 0.57,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.37,
+            "alm1": 0.54,
+            "alm2": 0.01,
+            "label": 0,
+            "id": "patient52"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MULI', 'alm1': 0.54, 'mcg': 0.77, 'gvh': 0.57, 'aac': 0.37}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MULI' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MULI' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.77 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.54 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.57 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.37 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "SLP",
+            "mcg": 0.68,
+            "gvh": 0.49,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.62,
+            "alm1": 0.55,
+            "alm2": 0.28,
+            "label": 0,
+            "id": "patient53"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'SLP', 'alm1': 0.55, 'mcg': 0.68, 'gvh': 0.49, 'aac': 0.62}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'SLP' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'SLP' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.68 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.55 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.49 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.62 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "KDGL",
+            "mcg": 0.33,
+            "gvh": 0.45,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.45,
+            "alm1": 0.88,
+            "alm2": 0.89,
+            "label": 0,
+            "id": "patient54"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'KDGL', 'alm1': 0.88, 'mcg': 0.33, 'gvh': 0.45, 'aac': 0.45}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'KDGL' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.88 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'KDGL' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.33 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.88 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.45 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.45 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "POTF",
+            "mcg": 0.66,
+            "gvh": 0.71,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.41,
+            "alm1": 0.5,
+            "alm2": 0.35,
+            "label": 0,
+            "id": "patient55"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'POTF', 'alm1': 0.5, 'mcg': 0.66, 'gvh': 0.71, 'aac': 0.41}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'POTF' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.5 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'POTF' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.66 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.5 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.71 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.41 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -465,6 +1135,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'THIK', 'alm1': 0.37, 'mcg': 0.17, 'gvh': 0.52, 'aac': 0.49}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'THIK' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.37 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'THIK' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.52 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.17 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -483,6 +1155,8 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'PTGA', 'alm1': 0.27, 'mcg': 0.4, 'gvh': 0.42, 'aac': 0.37}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'PTGA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.27 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'PTGA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.42 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.4 which should be greater than 0.41 does not hold \\n\"]"
     },
     {
@@ -501,7 +1175,129 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'UGPQ', 'alm1': 0.26, 'mcg': 0.26, 'gvh': 0.4, 'aac': 0.36}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'UGPQ' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.26 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'UGPQ' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.4 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.26 which should be greater than 0.41 does not hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "MCP2",
+            "mcg": 0.81,
+            "gvh": 0.53,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.57,
+            "alm1": 0.87,
+            "alm2": 0.88,
+            "label": 0,
+            "id": "patient59"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MCP2', 'alm1': 0.87, 'mcg': 0.81, 'gvh': 0.53, 'aac': 0.57}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MCP2' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.87 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MCP2' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.81 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.87 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.53 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.57 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "DHSD",
+            "mcg": 0.54,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.4,
+            "alm1": 0.87,
+            "alm2": 0.88,
+            "label": 0,
+            "id": "patient60"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'DHSD', 'alm1': 0.87, 'mcg': 0.54, 'gvh': 0.49, 'aac': 0.4}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'DHSD' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.87 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'DHSD' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.54 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.87 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.49 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.4 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "KEFC",
+            "mcg": 0.63,
+            "gvh": 0.42,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.48,
+            "alm1": 0.77,
+            "alm2": 0.8,
+            "label": 0,
+            "id": "patient61"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'KEFC', 'alm1': 0.77, 'mcg': 0.63, 'gvh': 0.42, 'aac': 0.48}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'KEFC' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'KEFC' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.63 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.77 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.42 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.48 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "FTSH",
+            "mcg": 0.81,
+            "gvh": 0.44,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.42,
+            "alm1": 0.67,
+            "alm2": 0.68,
+            "label": 0,
+            "id": "patient62"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'FTSH', 'alm1': 0.67, 'mcg': 0.81, 'gvh': 0.44, 'aac': 0.42}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FTSH' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.67 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FTSH' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.81 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.67 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.44 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.42 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "CYPH",
+            "mcg": 0.67,
+            "gvh": 0.81,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.54,
+            "alm1": 0.49,
+            "alm2": 0.23,
+            "label": 0,
+            "id": "patient63"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'CYPH', 'alm1': 0.49, 'mcg': 0.67, 'gvh': 0.81, 'aac': 0.54}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'CYPH' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.49 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'CYPH' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.67 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.49 which should be less equal to 0.53 does hold and\\n\\tthe value of gvh is 0.81 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.54 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "MCP4",
+            "mcg": 0.87,
+            "gvh": 0.49,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.61,
+            "alm1": 0.76,
+            "alm2": 0.79,
+            "label": 0,
+            "id": "patient64"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'MCP4', 'alm1': 0.76, 'mcg': 0.87, 'gvh': 0.49, 'aac': 0.61}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MCP4' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'MCP4' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.87 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.76 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.49 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.61 which should be greater than 0.33 does hold \\n\"]"
     },
     {
         "instance": {
@@ -519,6 +1315,48 @@
         "ml_prediction": 0,
         "foldrpp_prediction": 1,
         "hybrid_prediction": 1,
+        "true_label": 1,
+        "status": "improvement",
         "explanation": "[\"{'sn': 'PTCA', 'alm1': 0.23, 'mcg': 0.5, 'gvh': 0.51, 'aac': 0.27}\", \"label(X,'cp') does hold because\\n\\tthe value of sn is 'PTCA' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.23 which should be less equal to 0.38 does hold \\n\\texception ab1(X,'True') does not hold because\\n\\t\\tthe value of sn is 'PTCA' which should not equal 'PTKB' does hold and\\n\\t\\tthe value of gvh is 0.51 which should be greater than 0.55 does not hold and\\n\\t\\tthe value of mcg is 0.5 which should be greater than 0.41 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "PTHB",
+            "mcg": 0.36,
+            "gvh": 0.47,
+            "lip": 0.48,
+            "chg": 0.5,
+            "aac": 0.51,
+            "alm1": 0.69,
+            "alm2": 0.72,
+            "label": 0,
+            "id": "patient66"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'PTHB', 'alm1': 0.69, 'mcg': 0.36, 'gvh': 0.47, 'aac': 0.51}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PTHB' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.69 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'PTHB' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.36 which should be less equal to 0.59 does hold and\\n\\tthe value of alm1 is 0.69 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.47 which should be less equal to 0.58 does hold and\\n\\tthe value of aac is 0.51 which should be greater than 0.33 does hold \\n\"]"
+    },
+    {
+        "instance": {
+            "sn": "FHUE",
+            "mcg": 0.6,
+            "gvh": 0.76,
+            "lip": 1.0,
+            "chg": 0.5,
+            "aac": 0.77,
+            "alm1": 0.59,
+            "alm2": 0.52,
+            "label": 0,
+            "id": "patient67"
+        },
+        "ml_prediction": 0,
+        "foldrpp_prediction": 0,
+        "hybrid_prediction": 0,
+        "true_label": 0,
+        "status": "no_change",
+        "explanation": "[\"{'sn': 'FHUE', 'alm1': 0.59, 'mcg': 0.6, 'gvh': 0.76, 'aac': 0.77}\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FHUE' which should not equal 'FECR' does hold and\\n\\tthe value of alm1 is 0.59 which should be less equal to 0.38 does not hold \\n\", \"label(X,'cp') does not hold because\\n\\tthe value of sn is 'FHUE' which should not equal 'AAS' does hold and\\n\\tthe value of mcg is 0.6 which should be less equal to 0.59 does not hold and\\n\\tthe value of alm1 is 0.59 which should be less equal to 0.53 does not hold and\\n\\tthe value of gvh is 0.76 which should be less equal to 0.58 does not hold and\\n\\tthe value of aac is 0.77 which should be greater than 0.33 does hold \\n\"]"
     }
 ]
